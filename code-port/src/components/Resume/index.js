@@ -1,19 +1,17 @@
 import React from 'react';
+import thumbResume from '../../assets/media/resume-thumbnail.png';
 
 function Resume(){
-    <section>
+  
+return(  
+  <div>
         <div>
-            {/* resume thumbnail */}
+           <a className='modal-trigger' onClick={toggleModal}>
+            <img src={thumbResume} />
+           </a>
         </div>
-        
-        <div>
-            {/* image of resume goes here */}
-
-            {/*  download button goes here */}
-        
-        
-        </div>
-    </section>
+    </div>
+  )
 }
 
 export default Resume;

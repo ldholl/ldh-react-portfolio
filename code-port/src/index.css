@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/assets/media/clouds-bg.jpg');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav{
+  background-color: rgb(26, 106, 191)
+}
+
+#header-name{
+  font-size: 45px;
+  margin-left: 20px;
+}
+
+.nav-links{
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.section-header{
+ text-align: center;
+}
+
+.section-div{
+  height: 45px;
+}
+
+#about-section{
+  background-color: white;
+}
+.s6 img {
+  max-width: 100%;
+  padding: 10px;
+}
+
+#contact-form{
+  margin: 45px;
+}
+
+.modal-trigger img {
+  max-width: 20%;
+}
+
+#footer-div{
+  align-items: center;
+}
+
+.footer-links {
+  display: inline;
+  margin: 25px;
+  font-size: 45px;
+}
+
