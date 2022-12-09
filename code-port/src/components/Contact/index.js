@@ -43,7 +43,7 @@ function Contact(){
     
 
     return(
-        <section>
+        <section id='contact-section'>
             <h2 className='section-header'>Contact Me</h2>
             <form id='contact-form' onSubmit={handleSubmit}>
                 <div>
