@@ -43,27 +43,27 @@ function Contact(){
     
 
     return(
-        <section id='contact-section'>
+        <section className='page-section' id='contact-section'>
             <h2 className='section-header'>Contact Me</h2>
-            <form id='contact-form' onSubmit={handleSubmit}>
+            <form id='contact-form' onSubmit={handleSubmit} className='z-depth-5'>
                 <div>
-                    <label htmlFor='name'>Name:</label>
-                    <input type='text' name='name' defaultValue={name} onBlur={handleChange} />
+                    <label htmlFor='name'></label>
+                    <input type='text' name='name' placeholder='Name' defaultValue={name} onBlur={handleChange} />
                 </div>
-                <div>
-                    <label htmlFor='email'>Email:</label>
-                    <input type='email' name='email' defaultValue={email} onBlur={handleChange} />
+                <div className='add-25-bott'>
+                    <label htmlFor='email'></label>
+                    <input type='email' name='email'  placeholder='Email' defaultValue={email} onBlur={handleChange} />
                 </div>
-                <div>
-                    <label htmlFor='message'>Message:</label>
-                    <textarea name='message' rows='5' defaultValue={message} onBlur={handleChange}></textarea>
+                <div className='add-25-bott'>
+                    <label htmlFor='message'>Message</label>
+                    <textarea name='message' rows='10' defaultValue={message} onBlur={handleChange}></textarea>
                 </div>
         {errorMessage && (
             <div>
-                <p className='error-text'>{errorMessage}</p>
+                <p className='error-text red-text'>{errorMessage}</p>
             </div>
         )}
-                <button type='submit'>Submit</button>
+                <button className='btn waves-effect waves-light blue' type='submit'>Submit</button>
             </form>
         </section>
 

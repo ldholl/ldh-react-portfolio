@@ -5,9 +5,10 @@ function Projects(){
     
 
     return(
-        <section id='project-section'>
-            <h2 className='section-header'>Portfolio</h2>
+        <section id='' className='page-section'>
             <div className='container'>
+            <h2 className='section-header'>Portfolio</h2>
+            
             
                 <ProjectList />
         

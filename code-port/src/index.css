@@ -1,8 +1,7 @@
+/* element rules */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:'Libre Baskerville', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../src/assets/media/clouds-bg.jpg');
@@ -14,50 +13,227 @@ code {
 }
 
 nav{
-  background-color: rgb(26, 106, 191)
+  background-color: rgb(34, 84, 136);
+  padding-bottom: 10px;
 }
 
-#header-name{
-  font-size: 45px;
-  margin-left: 20px;
-}
-
-.nav-links{
-  font-size: 30px;
-  margin-right: 20px;
+main {
+  background-color: white;
 }
 
 .section-header{
- text-align: center;
+  text-align: center;
+  font-weight: bold;
+ 
+ }
+ 
+ .page-section{
+   background-color: white;
+   padding: 25px 0px 25px 0px
+ }
+ 
+/* header rules */
+.nav-wrapper{
+  padding-bottom: 10px;
 }
 
-.section-div{
-  height: 45px;
+#header-name{
+  margin-left: 20px;
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  float: left;
 }
 
-#about-section{
-  background-color: white;
+.nav-links{
+  margin-right: 20px;
 }
-.s6 img {
-  max-width: 100%;
-  padding: 10px;
+
+
+.sidenav-trigger:hover{
+  filter: brightness(80%);
+}
+
+/* About */
+
+.card-stacked, #profile-card{
+  background-color: rgba(147, 177, 234, 0.131);
+}
+
+.about-list br{
+height: 1px;
+font-size: 2px;;
+}
+
+.about-list li {
+  list-style: circle;
+}
+
+
+/* Resume */
+#resume-section{
+  position: relative;
+  text-align: center;
+}
+
+#magnifying{
+  position: absolute;
+  top: 30%;
+  right: 47%;
+  color: transparent;
+  font-size: 80px;
+  z-index: 5;
+}
+
+.resume-trigger{
+  text-align: center;
+}
+
+.resume-trigger img {
+  max-width: 20%;
+  text-align: center;    
+  border: black solid 2px;
+  }
+  
+#resume-container:hover{
+  filter: brightness(50%);
+}
+  
+#resume-container:hover #magnifying{
+    color: rgb(99, 175, 255);
+  }
+
+
+/* Contact Me */
+#contact-section{
+  height: 100%;
+  display: block;
+  align-content: center;
 }
 
 #contact-form{
-  margin: 45px;
+  font-family: 'Libre Baskerville';
+  margin-bottom: 25rem;
+  background-color: white;
+  padding: 25px;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 5%;
+  border: outset rgb(26, 106, 191);  
 }
 
-.modal-trigger img {
-  max-width: 20%;
+
+#contact-form input {
+  font-family: 'Libre Baskerville';
+  color: rgba(0, 0, 0, 0.604);
 }
 
-#footer-div{
-  align-items: center;
+#contact-form label {
+  font-size: 25px;
 }
 
-.footer-links {
+.modalContainer{
+  text-align: center;
+}
+.modalContainer img{
+height: 100vh;
+border: black solid 3px;
+}
+
+/* Footer */
+#footer-section{
+  text-align: center;
+  background-color: rgb(34, 84, 136);
+  padding-bottom: 30px;
+}
+
+
+.btn{
+  font-family: 'Libre Baskerville'
+}
+
+.footer-links, .fa-solid {
   display: inline;
   margin: 25px;
-  font-size: 45px;
+  font-size: 55px;
+  color: white;
+  margin-bottom: 35px;
 }
+
+
+/* Specific rules */
+
+.add-25-bott{
+  margin-bottom: 25px;
+ }
+ 
+ .padding-top{
+   padding-top: 25px;
+ }
+
+
+/* Cloud cover */
+.section-div{
+  height: 17px;
+}
+.transp-15{
+  background: 
+    linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10) );
+}
+
+.transp-25{
+  background: 
+    linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) );
+}
+
+.transp-35{
+  background: 
+    linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) );
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 405px){
+  #header-name{
+    font-size: 35px;
+
+  }
+  .nav-links{
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 405px){
+  #header-name{
+    font-size: 35px;
+
+  }
+  .nav-links{
+    color: black;
+    margin-top: 16px;
+  }
+}
+
+
+@media only screen and (min-width: 600px){
+  #header-name{
+    font-size: 40px;
+
+  }
+  .nav-links{
+    font-size: 15px;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 768px){
+#header-name{
+  float: left;
+}
+.nav-links{
+  font-size: 35px;
+  color: white;
+  margin-top: auto;
+}
+} 
 

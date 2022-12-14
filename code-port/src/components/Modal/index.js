@@ -6,7 +6,7 @@ function Modal({onClose}){
     return (
         <div className='modalBackdrop'>
             <div className='modalContainer'>
-                <img src={fullResume} onClick={onClose} />
+                <img id='lg-resume'src={fullResume} onClick={onClose} />
             </div>
         </div>
 
