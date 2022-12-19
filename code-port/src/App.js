@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 //components
 import Nav from './components/Nav'
