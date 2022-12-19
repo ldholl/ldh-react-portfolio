@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import thumbResume from '../../assets/media/resume-thumbnail.png';
 import Modal from '../Modal';
 
@@ -35,7 +35,7 @@ return(
        {!isModalOpen && 
        <div id='resume-container'>
            <a className='resume-trigger' onClick={toggleButton}>
-            <img id='resume-thumbnail' className='z-depth-5' src={thumbResume} />
+            <img id='resume-thumbnail' className='z-depth-5' src={thumbResume} alt="A thumbnail of Lacy's resume" />
            </a>
            <i id='magnifying' className="fa-solid fa-magnifying-glass"></i>
         </div>}
