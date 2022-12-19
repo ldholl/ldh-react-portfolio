@@ -1,6 +1,6 @@
 {
-  "homepage": "http://ldholl.github.io/ldh-code-port",
-  "name": "ldh-code-port",
+  "homepage": "http://ldholl.github.io/ldh-react-portfolio",
+  "name": "ldh-react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
