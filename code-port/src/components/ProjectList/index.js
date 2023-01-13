@@ -39,6 +39,13 @@ function ProjectList(){
             link: 'https://drive.google.com/file/d/1MT_12sDiZqLaQ0OFZhq_OpRsBV-zjAo4/view',
             repos: 'https://github.com/ldholl/ldh-NoSQL',
             i: '4'
+        },
+        {
+            title: 'Paws-and-Claws',
+            description: 'A MERN application that allows users to create profiles and schedule appointments with a mobile pet groomer.',
+            link: 'https://paws-and-claws.herokuapp.com/',
+            repos: 'https://github.com/ldholl/ldh-paws-and-claws',
+            i: '5'
         }
     ]
 
