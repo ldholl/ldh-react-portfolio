@@ -7,7 +7,7 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 
 function Nav(){
-    const pages= ['about', 'contact', 'projects', 'resume']
+    const pages= ['about', 'projects', 'resume']
     const [currentPage, setCurrentPage] = useState('about');
 
 
@@ -23,13 +23,15 @@ function Nav(){
 
        <header>
             <nav>
-                <div className='nav-wrapper'>
-                    <a href='#' id='header-name'>Lacy D. Holleman</a>
+                <div className='header'>
+                    <div className='nav-name'>
+                    <a href='#' id=''>Lacy D. Holleman</a>
+                    </div>
                     {/* <a href="#" data-target="mobile-demo" class="sidenav-trigger" onClick={()=> toggleMenu()}><i class="material-icons">menu</i></a> */}
-                    <ul id='nav-mobile' className='right'>
+                    <ul id='navigation-bar' className=''>
                         {pages.map((page) => (
                             <li>
-                                <a href={'#' + page} className='nav-links' key={page} onClick={() => handlePageChange(page)}>{capitalizeFirstLetter(page)}</a>
+                                <a href={'#' + page} className='navigation-links' key={page} onClick={() => handlePageChange(page)}>{capitalizeFirstLetter(page)}</a>
                             </li>
                         ))}
                     </ul>

@@ -1,0 +1,75 @@
+
+  @media only screen and (min-width: 350px){
+    :root {
+      --color-primary: rgb(207, 228, 247);
+      --color-secondary: #ffea02;
+      --background: hsl(230, 30%, 15%);
+      --text: hsla(218, 96%, 89%, 0.981);
+    }
+    
+    ::selection {
+      background-color: var(--color-primary);
+      color: var(--background);
+      -webkit-text-fill-color: var(--background);
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    .transparent-text {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(
+        35deg,
+        var(--color-primary),
+        var(--color-secondary)
+      );
+    }
+
+
+
+  // .transparent-background {
+  //     @supports (background-clip: text) or (-webkit-background-clip: text) {
+  //       background-image: 
+  //         url('../src/assets/media/nature.jpg');
+  //       background-size: 110% auto;
+  //       background-position: center;
+  //       color: transparent;
+  //       -webkit-background-clip: text;
+  //       background-clip: text;
+  //     }
+  //   }  
+  };
+
+  @media only screen and (min-width: 768px){
+    .transparent-text {
+      display: none;
+    }
+  }
+
+  .transparent-background {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: 
+        url('../src/assets/media/nature.jpg');
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }  
+
+  
+  .transparent-background {
+      @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: 
+          url('../src/assets/media/orbeez.jpg');
+        background-size: 110% auto;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-color:rgba(207, 228, 247, 0.922)
+      }
+    } 

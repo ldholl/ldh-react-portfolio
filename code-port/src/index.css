@@ -1,10 +1,15 @@
 /* element rules */
+html{
+  overflow-x: hidden;
+}
 body {
+  overflow-x: hidden;
   margin: 0;
-  font-family:'Libre Baskerville', serif;
+  font-family:'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../src/assets/media/clouds-bg.jpg');
+  background-image: url('../src/assets/media/orbeez.jpg');
+  
 }
 
 code {
@@ -13,12 +18,17 @@ code {
 }
 
 nav{
-  background-color: rgb(34, 84, 136);
+  background-color: #8860e0;
   padding-bottom: 10px;
 }
 
 main {
-  background-color: white;
+  background-color: #84ceeb;
+  background: 
+    linear-gradient( rgba(193, 200, 228, 0.75), rgba(132, 206, 235, 0.75) );
+  min-height: 100vh;
+  width: 100%;
+  color: #1f4199
 }
 
 .section-header{
@@ -28,24 +38,29 @@ main {
  }
  
  .page-section{
-   background-color: white;
    padding: 25px 0px 25px 0px
  }
  
 /* header rules */
 .nav-wrapper{
   padding-bottom: 10px;
+  height: 15%;
 }
 
 #header-name{
   margin-left: 20px;
-  font-family: 'Libre Baskerville';
+  font-family: 'Rubik Mono One', sans-serif;
   font-style: italic;
-  float: left;
+   float: left;
 }
 
-.nav-links{
+.btn {
+  background-color: #532e98;
+  color: white;
+  font-size: 15px;
+  font-family: 'Rubik Mono One', sans-serif;
   margin-right: 20px;
+  padding: 1px 3px 10px 2px; 
 }
 
 
@@ -53,96 +68,82 @@ main {
   filter: brightness(80%);
 }
 
-/* About */
-
-.card-stacked, #profile-card{
-  background-color: rgba(147, 177, 234, 0.131);
-}
-
-.about-list br{
-height: 1px;
-font-size: 2px;;
-}
-
-.about-list li {
-  list-style: circle;
+/* NEW HEADER RULES */
+.header{
+  height: 0%;
 }
 
 
-/* Resume */
-#resume-section{
-  position: relative;
-  text-align: center;
-}
 
-#magnifying{
-  position: absolute;
-  top: 30%;
-  right: 47%;
-  color: transparent;
-  font-size: 80px;
-  z-index: 5;
-}
-
-.resume-trigger{
-  text-align: center;
-}
-
-.resume-trigger img {
-  max-width: 20%;
-  text-align: center;    
-  border: black solid 2px;
-  }
-  
-#resume-container:hover{
-  filter: brightness(50%);
-}
-  
-#resume-container:hover #magnifying{
-    color: rgb(99, 175, 255);
-  }
-
-
-/* Contact Me */
-#contact-section{
+/*  ABOUT */
+#about-section {
   height: 100%;
-  display: block;
+  width: 100%;
   align-content: center;
 }
 
-#contact-form{
-  font-family: 'Libre Baskerville';
-  margin-bottom: 25rem;
-  background-color: white;
-  padding: 25px;
-  margin-right: 25%;
-  margin-left: 25%;
-  margin-top: 5%;
-  border: outset rgb(26, 106, 191);  
+
+.skill-section{
+  float: left;
+  width: 50%;
+}
+
+.skill-text{
+  display: inline-block
+}
+.skill-list{
+  display: inline-block;
+  font-size: 12px;
+}
+
+.bio-section{
+text-align: center;
+float: right;
+width: 50%;
 }
 
 
-#contact-form input {
-  font-family: 'Libre Baskerville';
-  color: rgba(0, 0, 0, 0.604);
+.profile-div{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-size: cover;
+  float: left;
+  border: 10px outset #532e98;
+  background-image: url('./assets/media/profile-cropped-2.jpg');
+    
+  /* Change the shape according
+      to the image */
+  shape-outside: circle();
+  
+  
 }
 
-#contact-form label {
-  font-size: 25px;
+.bio-text{
+text-align: center;
 }
 
-.modalContainer{
-  text-align: center;
+.profile-title{
+  color: #ffb067;
+  font-family: 'Rubik Mono One', sans-serif ;
 }
-.modalContainer img{
-height: 100vh;
-border: black solid 3px;
-}
+
+
+
+
+/* GENERAL */
+
+
+/* RESUME */
+
+
+
 
 /* Footer */
 #footer-section{
   text-align: center;
-  background-color: rgb(34, 84, 136);
+  background-color: #13797b;
   padding-bottom: 30px;
 }
 
@@ -155,7 +156,7 @@ border: black solid 3px;
   display: inline;
   margin: 25px;
   font-size: 55px;
-  color: white;
+  color: #DEF2F1;
   margin-bottom: 35px;
 }
 
@@ -177,63 +178,192 @@ border: black solid 3px;
 }
 .transp-15{
   background: 
-    linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10) );
+    linear-gradient( rgba(193, 200, 228, 0.10), rgba(136, 96, 208, 0.10) );
 }
 
 .transp-25{
   background: 
-    linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) );
+    linear-gradient( rgba(193, 200, 228, 0.25), rgba(136, 96, 208, 0.25) );
 }
 
 .transp-35{
   background: 
-    linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) );
+    linear-gradient( rgba(193, 200, 228, 0.35), rgba(136, 96, 208, 0.35) );
 }
 
 
 /* media queries */
 
 @media only screen and (max-width: 405px){
-  #header-name{
+
+#header-name{
+  display: none;  }
+ 
+#navigation-bar{
+  margin-top: 5px;
+  align-items: center; 
+  text-align: center;
+}  
+
+.mobile-namer {
+    font-family: 'Rubik Mono One';
+    display: block;
+    text-align: center;
     font-size: 35px;
+    width: 60%;
+    margin: auto;
+    letter-spacing: -.2rem;    
+  }
+
+  .transparent-text{
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-bottom: -5;
+  margin-top: -10;
 
   }
-  .nav-links{
-    color: black;
+
+  .about-section{
+    display: block;
   }
+  .skill-section, .bio-section{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .skill-text, .bio-text{
+    margin: 10px;
+  }
+
+.profile-title{
+    font-size: 35px;
+    display: block;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+    margin-right: 0px;
+  }
+#me{
+  margin-top: -25px;
+  margin-right: 10px;
+}
+#about{
+margin-right: 60px;  
+padding-left: 0px
 }
 
+.profile-div{
+    border: 5px solid ;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+/* DIVIDE */
 @media only screen and (min-width: 405px){
-  #header-name{
-    font-size: 35px;
+ #header-name{
+  display: none;    
 
   }
   .nav-links{
     color: black;
     margin-top: 16px;
   }
+
+  .skill-section, .bio-section{
+    float: none;
+    margin: 10px;
+    display: block;
+    text-align: left;
+    width: 100%;  
+  }
+
+.skill-text, .bio-text{
+    margin: 20px;
+}
+
+.profile-div{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .profile-title{
+    font-size: 30px;
+    display: block;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+    margin-right: 0px;
+  }
+
+.mobile-namer {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    width: 60%;
+    margin: auto;    
+  }
+
+  .transparent-text{
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-bottom: -5;
+  margin-top: -10;
+  letter-spacing: -.2rem;
+  }
+#about{
+  margin-top: -15px;
+  margin-bottom: -10px;
+  margin-right: 10px;
+}
+
+#me{
+ margin-top: -10px;
+}
+
+
+
 }
 
 
 @media only screen and (min-width: 600px){
   #header-name{
-    font-size: 40px;
-
+   display: none
   }
   .nav-links{
     font-size: 15px;
     color: black;
   }
+
+  .skill-section{
+    float: left;
+    width: 45%;
+    align-content: center;
+  }
+  
+  .bio-section{
+  text-align: center;
+  float: right;
+  width: 45%;
+  align-content: center;
+  }
 }
 
 @media only screen and (min-width: 768px){
 #header-name{
-  float: left;
+  display: block;
+  font-size: 30px;
+  letter-spacing: -.2rem
 }
 .nav-links{
   font-size: 35px;
   color: white;
   margin-top: auto;
 }
+.mobile-namer, .transparent-text{
+  display: none;
+}
+
+
 } 
 
