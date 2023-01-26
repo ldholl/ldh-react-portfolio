@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/ldh-react-portfolio/static/css/main.157875d3.css",
-    "main.js": "/ldh-react-portfolio/static/js/main.de218790.js",
-    "static/media/clouds-bg.jpg": "/ldh-react-portfolio/static/media/clouds-bg.f9f5a23d42fc626de8dd.jpg",
+    "main.css": "/ldh-react-portfolio/static/css/main.2ad1e5d0.css",
+    "main.js": "/ldh-react-portfolio/static/js/main.5b78778c.js",
+    "static/media/bubble-crop.png": "/ldh-react-portfolio/static/media/bubble-crop.c368fac8fe2d0d662feb.png",
     "static/media/profile-cropped-2.jpg": "/ldh-react-portfolio/static/media/profile-cropped-2.3d6b78fb56d6e28f3077.jpg",
-    "static/media/resume-full.jpg": "/ldh-react-portfolio/static/media/resume-full.c0192f12df923fb1f935.jpg",
+    "static/media/5.jpg": "/ldh-react-portfolio/static/media/5.e14eb36640ef5ebfb1b5.jpg",
+    "static/media/orbeez.jpg": "/ldh-react-portfolio/static/media/orbeez.8944a74950dd93ef975e.jpg",
     "static/media/4.jpg": "/ldh-react-portfolio/static/media/4.916641f803d7235184b7.jpg",
     "static/media/3.jpg": "/ldh-react-portfolio/static/media/3.9ec2c727966aadc6754f.jpg",
-    "static/media/resume-thumbnail.png": "/ldh-react-portfolio/static/media/resume-thumbnail.285380d93ed9960e9bb6.png",
+    "static/media/bubble.png": "/ldh-react-portfolio/static/media/bubble.188881dddf6f932b5b9a.png",
+    "static/media/bubbleabout1.png": "/ldh-react-portfolio/static/media/bubbleabout1.bd1da3f609bc3314c58a.png",
+    "static/media/bubbleresume.png": "/ldh-react-portfolio/static/media/bubbleresume.7c37eb05783a16b62b20.png",
+    "static/media/bubbleprojects.png": "/ldh-react-portfolio/static/media/bubbleprojects.e11a80a4835f6b6ef4ea.png",
+    "static/media/bubbleabout.png": "/ldh-react-portfolio/static/media/bubbleabout.c1ae1d7672d2aec7da24.png",
+    "static/media/bubblebg.png": "/ldh-react-portfolio/static/media/bubblebg.f3381eeea64caa074925.png",
     "static/media/0.jpg": "/ldh-react-portfolio/static/media/0.3889f46b30f94c4bfff6.jpg",
     "static/media/2.jpg": "/ldh-react-portfolio/static/media/2.d666bdb72c4799d29e60.jpg",
     "static/media/1.jpg": "/ldh-react-portfolio/static/media/1.9f03f66c9a16a7cdbdfc.jpg",
     "index.html": "/ldh-react-portfolio/index.html",
-    "main.157875d3.css.map": "/ldh-react-portfolio/static/css/main.157875d3.css.map",
-    "main.de218790.js.map": "/ldh-react-portfolio/static/js/main.de218790.js.map"
+    "main.2ad1e5d0.css.map": "/ldh-react-portfolio/static/css/main.2ad1e5d0.css.map",
+    "main.5b78778c.js.map": "/ldh-react-portfolio/static/js/main.5b78778c.js.map"
   },
   "entrypoints": [
-    "static/css/main.157875d3.css",
-    "static/js/main.de218790.js"
+    "static/css/main.2ad1e5d0.css",
+    "static/js/main.5b78778c.js"
   ]
 }
