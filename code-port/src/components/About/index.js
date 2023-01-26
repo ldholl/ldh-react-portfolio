@@ -49,7 +49,7 @@ function About(){
                 <p className='profile-title' id='me'>Me</p>   
                 <div className='bio-text'>
                     
-                    <p >After receiving my law degree and working in field for some time, I realized that while my need for analytical work was being satisfied, there were no real opportunities for creative or unorthodox problem-solving.After a period of self-reflection, I determined that a change in career paths was probably in order. <br></br><br></br>Web development was an attractive option, considering the wide-ranging skills it requires, as well as its constantly-evolving nature. I earned a certificate in Full-Stack Web Development from a George Washington University coding bootcamp.</p>
+                    <p >After receiving my law degree and working in field for some time, I realized that while my need for analytical work was being satisfied, there were no real opportunities for creative or unorthodox problem-solving. After a period of self-reflection, I determined that a change in career paths was probably in order. <br></br><br></br>Web development was an attractive option, considering the wide-ranging skills it requires, as well as its constantly-evolving nature. I earned a certificate in Full-Stack Web Development from a George Washington University coding bootcamp.</p>
                 </div>
             </div>
         </div>
