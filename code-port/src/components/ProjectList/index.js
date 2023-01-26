@@ -27,7 +27,7 @@ function ProjectList(){
 
         },
         {
-            title: 'LDHoll Weather-getter',
+            title: 'Weather-Getter',
             description: "A weather app that allows users to search for any city and returns that city's 5-day forecast using a weather API.",
             link: 'https://ldholl.github.io/ldh-weather-api/',
             repos: 'https://github.com/ldholl/ldh-weather-api',
@@ -43,6 +43,7 @@ function ProjectList(){
         {
             title: 'Paws-and-Claws',
             description: 'A MERN application that allows users to create profiles and schedule appointments with a mobile pet groomer.',
+            keyTech: "React, Apollo-Client, GraphQL, Express/Apollo-Server-Express, Mongoose, MongoDB, JSON-WebToken, and Bcrypt.",
             link: 'https://paws-and-claws.herokuapp.com/',
             repos: 'https://github.com/ldholl/ldh-paws-and-claws',
             i: '5'
@@ -52,41 +53,33 @@ function ProjectList(){
 
     return (
 
-            <div className='row'>
+<div className='project-container'>
               
-              {/* {projects.map((project) => (
-                <div className='col s12 m6 project-container' key={project.title}>
-                    <a href={project.link}>
-                    <img src={require(`../../assets/media/projects/${project.i}.jpg`)}
-                        alt={project.title} 
-                        className='project-thumbnail' />
-                        <div className='project-text'>
-                    <h6 className='project-title'>{project.title}</h6>
-                    <p className='project-desc'>{project.description}</p>
-                    </div> 
-                    </a>
-                </div>
-              ))} */}
+
 {projects.map((project) => (
 
-             <div className='col s12 m6 project-holder'>
-                <div className='card project-card'>
-                    <div className='card-image'>
-                        <img src={require(`../../assets/media/projects/${project.i}.jpg`)} />
-                        <span className='card-title'>{project.title}</span>
+             <div className='project-holder glass'>
+
+                    <div className='project-image'>
+                        <h3 className='project-title'>{project.title}</h3>
+                        <img className='project-jpg' src={require(`../../assets/media/projects/${project.i}.jpg`)} />  
                     </div>
-                    <div className='card-content project-desc'>
+
+                    <div className='project-desc'>
                         <p>{project.description}</p>
+                        <p>Key Technologies: {project.keyTech}</p>
                     </div>
-                    <div className='card-action'>
-                        <a href={project.link}>Visit</a>
-                        <a href={project.repos}>Repository</a>
+
+                    <div className='project-links'>
+                        <a className='site-link' href={project.link}>View</a>
+                        <a className='repo-link' href={project.repos}>Repository</a>
                     </div>
-                </div>
               </div>
+
             ))}
 
-             </div>
+</div>
+
     )
 }
 

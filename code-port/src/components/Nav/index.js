@@ -22,19 +22,20 @@ function Nav(){
         <div>
 
        <header>
-            <nav>
-                <div className='header'>
-                    <div className='nav-name'>
-                    <a href='#' id=''>Lacy D. Holleman</a>
-                    </div>
+            <nav className='navigation-bar'>
+
+                <a href='/' id='header-namer' className='sticker header-span'>Lacy D. Holleman</a>
+
                     {/* <a href="#" data-target="mobile-demo" class="sidenav-trigger" onClick={()=> toggleMenu()}><i class="material-icons">menu</i></a> */}
-                    <ul id='navigation-bar' className=''>
-                        {pages.map((page) => (
-                            <li>
-                                <a href={'#' + page} className='navigation-links' key={page} onClick={() => handlePageChange(page)}>{capitalizeFirstLetter(page)}</a>
-                            </li>
-                        ))}
-                    </ul>
+                <div className='header-list'>
+                    
+                    {pages.map((page) => (
+                    
+                    <a href={'#' + page} className='navigation-links' key={page} onClick={() => handlePageChange(page)}>
+                    <img src={require(`../../assets/media/bubble${page}.png`)} className='bubble-button' />
+                    </a>
+
+                    ))}
                 </div>
             </nav> 
     {/* <div id='sidenav-container'>
@@ -47,16 +48,16 @@ function Nav(){
 
         </header>
         <div className='section-div transp-35'></div>
+        <div className='section-div transp-25'></div> 
         <div className='section-div transp-15'></div>
-        <div className='section-div z-depth-5'></div> 
         <main>
         {currentPage === 'about' && <About />}
-        {currentPage === 'contact' && <Contact/>}
         {currentPage === 'resume' && <Resume />}
         {currentPage === 'projects' && <Projects />}
         </main>
-        <div className='section-div'></div>
+      
         <div className='section-div transp-15'></div>
+        <div className='section-div transp-25'></div>
         <div className='section-div transp-35'></div>        
         </div>
     )

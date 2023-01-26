@@ -2,6 +2,7 @@
 html{
   overflow-x: hidden;
 }
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -9,6 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../src/assets/media/orbeez.jpg');
+  background-size: cover;
+  height: 100%;
   
 }
 
@@ -18,17 +21,20 @@ code {
 }
 
 nav{
-  background-color: #8860e0;
+  background-color: #25274D;
   padding-bottom: 10px;
+  
 }
 
 main {
-  background-color: #84ceeb;
-  background: 
-    linear-gradient( rgba(193, 200, 228, 0.75), rgba(132, 206, 235, 0.75) );
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
-  color: #1f4199
+  background-color: #cdcfd29a;
+  /* background: 
+    linear-gradient(180, #aaabb834, #aaabb83c ); */
+  min-height: 80em;
+  width: 100%;
+  color: #25274D;
 }
 
 .section-header{
@@ -41,33 +47,6 @@ main {
    padding: 25px 0px 25px 0px
  }
  
-/* header rules */
-.nav-wrapper{
-  padding-bottom: 10px;
-  height: 15%;
-}
-
-#header-name{
-  margin-left: 20px;
-  font-family: 'Rubik Mono One', sans-serif;
-  font-style: italic;
-   float: left;
-}
-
-.btn {
-  background-color: #532e98;
-  color: white;
-  font-size: 15px;
-  font-family: 'Rubik Mono One', sans-serif;
-  margin-right: 20px;
-  padding: 1px 3px 10px 2px; 
-}
-
-
-.sidenav-trigger:hover{
-  filter: brightness(80%);
-}
-
 /* NEW HEADER RULES */
 .header{
   height: 0%;
@@ -102,22 +81,18 @@ float: right;
 width: 50%;
 }
 
-
 .profile-div{
-  width: 400px;
-  height: 400px;
   border-radius: 50%;
   object-fit: contain;
   background-size: cover;
   float: left;
-  border: 10px outset #532e98;
+  /* outline: 5px rgba(255, 255, 255, 0.523) solid; */
   background-image: url('./assets/media/profile-cropped-2.jpg');
+  margin-right: 5px;
     
   /* Change the shape according
       to the image */
   shape-outside: circle();
-  
-  
 }
 
 .bio-text{
@@ -125,8 +100,13 @@ text-align: center;
 }
 
 .profile-title{
-  color: #ffb067;
+  color: #25274D;
   font-family: 'Rubik Mono One', sans-serif ;
+}
+
+/* Portfolio */
+.project-holder{
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -134,26 +114,64 @@ text-align: center;
 
 /* GENERAL */
 
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.centered{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
 
 /* RESUME */
+#resume-section{}
 
+
+.links-container{
+  display: block;
+  width: 15%;
+  margin-left: 5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-size: 20px;;
+}
+
+.resume-container{
+  display: block;
+  width: 80%;
+  margin: 5%;
+  padding: 5%;
+  font-size: 16px;
+}
+
+.contact-info{
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+
+.work-xp p{
+  text-align: left;
+}
 
 
 
 /* Footer */
 #footer-section{
   text-align: center;
-  background-color: #13797b;
+  background-color: #25274D;
   padding-bottom: 30px;
-}
-
-
-.btn{
-  font-family: 'Libre Baskerville'
+  
 }
 
 .footer-links, .fa-solid {
-  display: inline;
   margin: 25px;
   font-size: 55px;
   color: #DEF2F1;
@@ -178,35 +196,58 @@ text-align: center;
 }
 .transp-15{
   background: 
-    linear-gradient( rgba(193, 200, 228, 0.10), rgba(136, 96, 208, 0.10) );
+    linear-gradient(180deg, #2e9bca2e, #29638a37 );
 }
 
 .transp-25{
   background: 
-    linear-gradient( rgba(193, 200, 228, 0.25), rgba(136, 96, 208, 0.25) );
+  linear-gradient(180deg, #2e9bca56, #29638a46 );
 }
 
 .transp-35{
   background: 
-    linear-gradient( rgba(193, 200, 228, 0.35), rgba(136, 96, 208, 0.35) );
+  linear-gradient(180deg,#2e9bca6e, #29638a67 );
 }
 
 
 /* media queries */
-
+/* DIVIDE */
 @media only screen and (max-width: 405px){
 
-#header-name{
-  display: none;  }
- 
-#navigation-bar{
-  margin-top: 5px;
-  align-items: center; 
+header{
+  align-items: center;
   text-align: center;
-}  
+  height: 150px;
+}
+
+#header-namer{
+  display: none;  
+}
+
+.navigation-bar{
+  padding: auto;
+  height: 100%;
+}
+
+.header-list{
+  height: 100%;
+}
+
+.navigation-links{
+  text-align: justify;
+  background: transparent;
+}
+
+.bubble-button{
+  height: 60%;
+  margin: 20px 15px 15px 0px;
+  border-radius: 50%;
+  border: solid 5px #2E9CCA;
+}
 
 .mobile-namer {
     font-family: 'Rubik Mono One';
+    color:#25274D;
     display: block;
     text-align: center;
     font-size: 35px;
@@ -215,26 +256,29 @@ text-align: center;
     letter-spacing: -.2rem;    
   }
 
-  .transparent-text{
-  font-family: 'Rubik Mono One', sans-serif;
-  margin-bottom: -5;
-  margin-top: -10;
+.skill-section{
+  font-size: 20px;
+}
 
+.skill-list{
+  font-size: 18px;
+  text-align: left;
+
+}
+.about-section{
+  display: block;
+  }
+  
+.skill-section, .bio-section{
+  float: none;
+  display: block;
+  width: 100%;
+  text-align: center;
   }
 
-  .about-section{
-    display: block;
-  }
-  .skill-section, .bio-section{
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .skill-text, .bio-text{
-    margin: 10px;
-  }
+.skill-text, .bio-text{
+  margin: 10px;
+}
 
 .profile-title{
     font-size: 35px;
@@ -242,9 +286,10 @@ text-align: center;
     margin-bottom: -10px;
     padding-bottom: -10px;
     margin-right: 0px;
-  }
+}
+
 #me{
-  margin-top: -25px;
+  margin-top: -15px;
   margin-right: 10px;
 }
 #about{
@@ -258,59 +303,189 @@ padding-left: 0px
     height: 150px;
     margin-left: 10px;
     margin-right: 10px;
-  }
-
 }
-/* DIVIDE */
+
+/* Portfolio */
+#project-page{
+  width: 100%;
+  display: inline-block;
+}
+
+.project-header{
+  font-size: 40px;
+  border-bottom: #29638a40 solid 3px;
+  align-self: center;
+}
+.project-holder{
+  margin: 10px 10px 20px 10px;
+  height: 100%;
+  border-radius: 5%;
+  border: solid 1px #25274d56;
+  overflow: hidden;  
+}
+
+.project-image{
+  text-align: center;
+  aspect-ratio: 16/9;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.project-jpg{
+  height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+  filter:opacity(75%);
+  padding-top: 1px;
+  margin-bottom: 0;
+}
+
+.project-jpg:hover{
+  filter:opacity(100%);
+}
+
+.project-title{
+  color: #25274D;
+  padding: 5px;
+  font-size: 25px;
+  margin: 0;
+}
+
+.project-desc{
+  padding: 0 10px 10px 10px;
+}
+
+.project-links{
+  width: 100%;
+  display: inline-flex;  
+  padding: 2% 0 2% 0;
+  background-color: #25274d37;
+  font-size: 20px;
+}
+
+.repo-link{
+  color: #25274D;
+  text-decoration: none;
+  padding-left: 13%;
+  padding-right: 2%;
+  width: 45%;
+}
+
+.site-link{
+  width: 45%;
+  text-decoration: none;
+  color: #25274D;
+  padding-left: 15%;
+  border-right: solid 2px #25274D
+}
+
+.site-link:active{
+  color: white;
+  text-shadow:
+    0 0 7px #52a8cc,
+    0 0 10px #52a8cc,
+    0 0 21px #52a8cc,
+    0 0 42px #2E9CCA,
+    0 0 82px #2E9CCA,
+    0 0 92px #2E9CCA,
+    0 0 102px #2E9CCA,
+    0 0 151px #2E9CCA;
+}
+
+.repo-link:active{
+  color: white;
+  text-shadow:
+    0 0 7px #52a8cc,
+    0 0 10px #52a8cc,
+    0 0 21px #52a8cc,
+    0 0 42px #2E9CCA,
+    0 0 82px #2E9CCA,
+    0 0 92px #2E9CCA,
+    0 0 102px #2E9CCA,
+    0 0 151px #2E9CCA;
+}
+
+/* PORTFOLIO */
+.links-container{
+  width: 85%;
+}
+}
+
+
+
 @media only screen and (min-width: 405px){
- #header-name{
+ #header-namer{
   display: none;    
-
   }
-  .nav-links{
-    color: black;
-    margin-top: 16px;
+  header{
+    align-items: center;
+    text-align: center;
+    height: 150px;
+  }
+  
+  .navigation-bar{
+    padding: auto;
+    height: 100%;
+  }
+  
+  .header-list{
+    height: 100%;
+  }
+  
+  .navigation-links{
+    text-align: justify;
+    background: transparent;
+  }
+  
+.bubble-button{
+  height: 60%;
+  margin: 20px 15px 15px 0px;
+  border-radius: 50%;
+  border: solid 5px #2E9CCA
   }
 
-  .skill-section, .bio-section{
+.mobile-namer {
+  font-family: 'Rubik Mono One';
+  color:#25274dde;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  width: 60%;
+  margin: auto;
+  letter-spacing: -.2rem;    
+  }
+
+.skill-section, .bio-section{
     float: none;
     margin: 10px;
     display: block;
-    text-align: left;
+    text-align: center;
     width: 100%;  
   }
 
 .skill-text, .bio-text{
     margin: 20px;
+    font-size: 20px;
+}
+
+.skill-list, .ongoing{
+  text-align: left;
+  font-size: 20px;
 }
 
 .profile-div{
-    width: 300px;
-    height: 300px;
-    margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   }
-  .profile-title{
-    font-size: 30px;
-    display: block;
-    margin-bottom: -10px;
-    padding-bottom: -10px;
-    margin-right: 0px;
-  }
-
-.mobile-namer {
-    display: block;
-    text-align: center;
-    font-size: 35px;
-    width: 60%;
-    margin: auto;    
-  }
-
-  .transparent-text{
-  font-family: 'Rubik Mono One', sans-serif;
-  margin-bottom: -5;
-  margin-top: -10;
-  letter-spacing: -.2rem;
-  }
+.profile-title{
+  font-size: 30px;
+  display: block;
+  margin-bottom: -10px;
+  padding-bottom: -10px;
+  margin-right: 0px;
+}
 #about{
   margin-top: -15px;
   margin-bottom: -10px;
@@ -321,18 +496,120 @@ padding-left: 0px
  margin-top: -10px;
 }
 
+/* Portfolio */
+#project-page{
+  width: 100%;
+  display: inline-block;
+}
 
+/* .project-container{
+  backdrop-filter: blur(10px);
+} */
+.project-header{
+  font-size: 45px;
+  border-bottom: #29638a40 solid 3px;
+  align-self: center;
+
+}
+.project-holder{
+  margin: 10px 10px 20px 10px;
+  height: 100%;
+  border-radius: 5%;
+  border: solid 1px #25274d56;
+  overflow: hidden; 
+}
+
+.project-image{
+  text-align: center;
+  aspect-ratio: 16/9;
+  padding-bottom: 0;
+  margin-bottom: 0;
 
 }
 
+.project-jpg{
+  height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+  filter:opacity(75%);
+  padding-top: 1px;
+  margin-bottom: 0;
+}
+
+.project-jpg:hover{
+  filter:opacity(100%);
+}
+
+.project-title{
+  color: #25274D;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0;
+}
+
+.project-desc{
+  padding: 0 10px 10px 10px;
+}
+
+.project-links{
+  width: 100%;
+  display: inline-flex;
+  padding: 2% 0 2% 0;
+  background-color: #25274d37;
+  font-size: 25px;
+
+}
+
+.repo-link{
+  color: #25274D;
+  text-decoration: none;
+  padding-left: 15%;
+  width: 45%;
+}
+
+.site-link{
+  width: 45%;
+  text-decoration: none;
+  color: #25274D;
+  padding-left: 15%;
+  border-right: solid 2px #25274D;
+}
+
+.site-link:hover{
+  color: white;
+  text-shadow:
+    0 0 7px #52a8cc,
+    0 0 10px #52a8cc,
+    0 0 21px #52a8cc,
+    0 0 42px #2E9CCA,
+    0 0 82px #2E9CCA,
+    0 0 92px #2E9CCA,
+    0 0 102px #2E9CCA,
+    0 0 151px #2E9CCA;
+}
+
+.repo-link:hover{
+  color: white;
+  text-shadow:
+    0 0 7px #52a8cc,
+    0 0 10px #52a8cc,
+    0 0 21px #52a8cc,
+    0 0 42px #2E9CCA,
+    0 0 82px #2E9CCA,
+    0 0 92px #2E9CCA,
+    0 0 102px #2E9CCA,
+    0 0 151px #2E9CCA;
+}
+
+.links-container{
+  width: 85%;
+}
+
+}
 
 @media only screen and (min-width: 600px){
-  #header-name{
+  #header-namer{
    display: none
-  }
-  .nav-links{
-    font-size: 15px;
-    color: black;
   }
 
   .skill-section{
@@ -347,23 +624,86 @@ padding-left: 0px
   width: 45%;
   align-content: center;
   }
+
+
 }
 
 @media only screen and (min-width: 768px){
-#header-name{
-  display: block;
-  font-size: 30px;
-  letter-spacing: -.2rem
+#header-namer{
+  text-decoration: none;
+  float: left;
+  display: inline;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
 }
-.nav-links{
-  font-size: 35px;
-  color: white;
-  margin-top: auto;
-}
+
 .mobile-namer, .transparent-text{
   display: none;
 }
 
+.header-list{
+  float: right;
+}
+
+.skill-section{
+  height: 100%;
+}
+
+#about{
+  padding-top: 5%;
+}
+
+
+/* Projects */
+#project-page{
+  width: 100%;
+}
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.project-container>* {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.links-container{
+  width: 30%;
+}
 
 } 
 
+@media only screen and (min-width: 1024px){
+  #header-namer{
+    font-size: 60px;
+  };
+
+  .header-span{
+    font-size: 60px;
+  }
+
+  .profile-div{
+    width: 400px;
+    height: 400px;
+    margin-left: 5%;
+  }
+
+  /* Projects */
+#project-page{
+  width: 100%;
+}
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.project-container>* {
+  flex: 1 1 450px;
+  margin: 30px;
+}
+}
